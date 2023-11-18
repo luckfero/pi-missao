@@ -1,0 +1,764 @@
+/*
+
+fontes e cores
+
+ 'Bree Serif', serif;
+
+#fff = WHITE
+#556B2F = DARKOLIVEGREEN
+#909f78 = DARKOLIVEGREEN TRANSPARENT
+#006400 = DARKGREEN
+#8FBC8F = DarkSeaGreen
+#008000 = GREEN
+#3CB371 = MEDIUMSEAGREEN
+#808000 = Olive
+#6B8E23 = OliveDrab
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/image/fundoprincipal.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav a{
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+}
+
+nav img {
+    width: 90px;
+    padding-right: 20px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box {
+    color: #fff;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size:78px;
+}
+
+.text-box p {
+    margin: 40px 0 40px;
+    font-size: 24px;
+    color: #fff;
+    padding-left: 60px;
+    padding-right: 60px;
+    line-height: 36px;
+}
+
+.more-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.more-btn:hover{
+    border: 1px solid #556B2F;
+    background: #556B2F;
+    transition: 0.7s;
+
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .text-box h1{
+        font-size: 34px;
+    }
+    .text-box p{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position:fixed;
+        background: #556B2F;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 10px;
+    }
+}
+@media(max-width: 930px) {
+    .text-box h1{
+        padding-top: 150px;
+        font-size: 56px;
+    }
+    
+}
+
+@media(max-width: 500px) {
+    .text-box h1{
+        padding-top: 150px;
+        font-size: 26px;
+    }
+    .text-box p{
+        font-size: 16px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #556B2F;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 10px;
+    }
+}
+
+/*------------------------------------------------------------------------------------ PROJETOS -----------------------------------------------------------------------------------*/
+
+.allthings {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#galeria-col {
+    font-size: 46px;
+    color: #fff;
+}
+#galeria-col p {
+    font-size: 20px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+p {
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.allthings-col {
+    flex-basis: 31%;
+    background: transparent;
+    border: 2px solid #556B2F;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.allthings-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.allthings-col p {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+}
+
+.allthings-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #556B2F;
+    background: #6a8e2396;
+    transition: 0.5s;
+}
+
+@media(max-width: 768px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* --------------------------------------------------------------------------------- UNIDADES ------------------------------------------------------------------------------------- */
+
+.unidades {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.unidades-col {
+    flex-basis: 36%;
+    border-radius: 10px;
+    margin-bottom:90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fundo {
+    width: 100%;
+    background-color: white;
+}
+
+.unidades-col img{
+    width: 100%;
+    display: block;
+}
+
+.camada {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.camada:hover{
+    background: #6a8e2396;
+}
+
+.camada h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.camada:hover h3 {
+    bottom: 49%;
+    opacity: 1
+}
+
+
+/* ---------------------------------------------------------------------------- CONTATO ---------------------------------------------------------------------------------------- */
+
+.contato {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/image/fundoprincipal.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contato h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .contato h1 {
+        font-size: 24px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------------- */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color:#d2e4d28f;
+}
+
+.footer h4{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight:lighter;
+    color: rgb(41, 41, 41);
+}
+
+.icones .fa-brands{
+    color:#556B2F;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    text-decoration: none;
+}
+
+.icones .fa-brands:hover {
+    opacity: 70%;
+}
+
+.icones .fa-solid{
+    color:#556B2F;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    text-decoration: none;
+
+}
+
+.icones .fa-solid:hover {
+    opacity: 70%;
+}
+
+
+.links-footer a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(41, 41, 41);
+}
+
+.links-footer a:hover {
+    color: #6B8E23;
+    transition: 0.5s;
+
+}
+
+.links-footer ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    margin-bottom: 10px;
+  }
+
+
+/* -------------------------------------------------------------------- SOBRE NÓS PAGINA --------------------------------------------------------------------------------------------- */
+
+.sub-header {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/image/fundoprincipal.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;   
+}
+
+.sub-header p {
+    color: #fff;
+    text-align: center;
+}
+
+.sub-header h1 {
+    margin-top: 75px;
+}
+
+.sobrenos {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.sobre-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.sobre-col img {
+    margin-top: 150px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sobre-col h1{
+    padding-top: 0;
+    font-size: 52px;
+    text-align: center;
+}
+
+.sobre-col p {
+    padding: 15px 0 25px;
+    line-height: 32px;
+}
+
+/* ------------------------------------------------------------------------------------ PARCEIROS ---------------------------------------------------------------------------------- */
+
+.parceiros {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom:70px;
+}
+
+.parceiros-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.parceiros-col img {
+    margin-top: 150px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.parceiros-col h1{
+    padding-top: 70px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.parceiros-col p {
+    padding: 15px 0 25px;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.grn-btn {
+    border: 1px solid #556B2F;
+    background: transparent;
+    color: #556B2F;
+}
+
+.grn-btn:hover{
+    color: #fff;
+}
+
+/* ---------------------------------------------------------------------------------- CONTATO ---------------------------------------------------------------------------------- */
+
+.local {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.local iframe{
+    width: 100%;
+
+}
+
+.local h1 {
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 42px;
+}
+
+.contatenos {
+    width: 80%;
+    margin: auto;
+}
+
+.contatenos-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contatenos-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contatenos-col div .fa-solid, .fa-regular, .fa-brands {
+    font-size: 28px;
+    color: #6B8E23;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contatenos-col div p{
+    padding: 0;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(31, 31, 31);
+}
+
+.contatenos-col div h5{
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+
+.contatenos-col input, .contatenos-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------- VOLUNTARIO --------------------------------------------------------------------------------------------- */
+
+.voluntario {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom:70px;
+}
+
+.voluntario-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.voluntario-col img {
+    margin-top: 130px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.voluntario-col h1{
+    padding-top: 20px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.voluntario-col p {
+    padding: 15px 0 25px;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.grn-btn {
+    border: 1px solid #556B2F;
+    background: transparent;
+    color: #556B2F;
+}
+
+.grn-btn:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- SCROLL BAR ------------------------------------------------------------------------------- */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-corner{
+    background: #556B2F;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#556B2F, #808000);
+}
+@media(max-width: 391px) {
+    *{
+        overflow:auto;
+            ::-webkit-scrollbar{
+                width: 0px;
+            }
+            ::-webkit-scrollbar-corner{
+                background: transparent;
+            }
+        
+            ::-webkit-scrollbar-thumb{
+                background: transparent;
+                
+        }
+    }
+    .links-footer a{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 14px;
+        
+    }
+    .links-footer ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        margin-bottom: 10px;
+      }
+}
