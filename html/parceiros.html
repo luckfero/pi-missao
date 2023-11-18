@@ -1,36 +1,171 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parceiros</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://kit.fontawesome.com/24c241d891.js" crossorigin="anonymous"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bree+Serif&family=Playfair+Display:wght@400;500;600&family=Staatliches&display=swap');
         </style>
-        <link rel="stylesheet" href="/css/missaoambiental.css">
-        <script src="/js/missaoambiental.js"></script>
-        <title>Parceiros</title>
     </head>
     <body>
-        <div>
-            <header class="header">
-                <a href="missaoambiental.html" class="logo">missão ambiental</a>
-                <nav class="navbar">
-                    <a href="missaoambiental.html">Home</a>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="galeria.html">Galeria</a>
-                    <a href="parceiros.html">Parceiros</a>
-                    <a href="contato.html">Contato</a>
-                    <a href="voluntario.html">Voluntarie-se</a>
-                </nav>
-            </header>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p id="parceiros">Contamos com diversos voluntários e parceiros como: SOS
-            Abelhas sem Ferrão, Sempre Sustentável, Escola Comunitária, OHquidea, Aquário de
-            São Paulo, ICC (Instituto Cristovão Colombo), FUNSAI (Fundação Nossa Senhora
-            Auxiliadora do Ipiranga), CADES Ipiranga (Conselho Regional do Meio Ambiente,
-            Desenvolvimento Sustentável e Cultura de Paz da Subprefeitura Ipiranga), Muda
-            Ipiranga, entre outros.</p>
+        <section class="sub-header">
+            <nav>
+                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental  ">Missão Ambiental</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="/html/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/html/sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="/html/parceiros.html">Parceiros</a>
+                        </li>
+                        <li>
+                            <a href="/html/contato.html">Contato</a>
+                        </li>
+                        <li>
+                            <a href="/html/voluntarios.html">Voluntarie-se</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+            </nav>
+            <h1>Parceiros</h1>
+            <p>Conheça mais à respeito das entidades e grupos que apoiam a Missão Ambiental!</p>
+        </section>
+        <!----------------------------------------------------------- SOBRE NÓS
+        ---------------------------------------------------------------->
+        <section class="parceiros">
+            <div class="row">
+                <div class="parceiros-col">
+                    <h1>S.O.S Abelhas Sem Ferrão</h1><br><br>
+                    <p>O SOS Abelhas Sem Ferrão é uma organização sem fins lucrativos, nascida de um
+                        grupo de amigos, preocupados com o desaparecimento das abelhas nativas, que se
+                        juntaram para tomar uma iniciativa a fim de reverter este quadro.
+                        <br><br>Muito nos preocupa o fato de que a maior parcela da população não saiba
+                            sobre a existência destas abelhas inofensivas, nem de sua grande importância
+                            ambiental, uma vez que, em alguns biomas brasileiros, são responsáveis por até
+                            90% da polinização da vegetação nativa.
+                        <br><br>Só isto já bastaria para sua preservação e de seu ambiente natural, cada
+                            vez mais degradado. Algumas espécies cosmopolitas conseguem sobreviver em áreas
+                            muito alteradas pelo ser humano, mesmo com a falta de árvores para o
+                            estabelecimento de seus ninhos.
+                        <br><br>Assim o SOS Abelhas sem Ferrão, atuando principalmente através de
+                            educação ambiental, ações de conscientização e resgate de enxames em risco,
+                            trabalha para a preservação das abelhas!</p>
+                            <a href="https://sosabelhassemferrao.com.br/site/" class="more-btn grn-btn">Saiba Mais</a>
+                </div>
+                <div class="parceiros-col">
+                    <img src="/image/sos.jpg" alt="imagem sos abelhas sem ferrão">
+                </div>
+                <div class="parceiros-col">
+                    <img src="/image/uniaohorta.png" alt="imagem união horta">
+                </div>
+                <div class="parceiros-col">
+                    <h1>União de Hortas Comunitárias de São Paulo</h1><br><br>
+                    <p>A União de Hortas Comunitárias de São Paulo busca promover a troca de
+                        experiências e o fortalecimento da agricultura urbana comunitária da cidade,
+                        representando mais de 10 hortas espalhadas pela cidade de São Paulo, como por
+                        exemplo a Horta Comunitária do Centro Cultural de São Paulo que foi criada em
+                        2013 por uma parceria entre o CCSP e a uma rede de voluntáros.
+                        <br><br>Foi a terceira horta comunitária educativa implantada no centro da
+                            cidade, integrando um importante movimento de ativismo pela gricultura urbana na
+                            cidade de São Paulo. Nosso objetivo é demonstrar que a agricultura regenerativa
+                            e a produção de alimentos sem veneno é possível mesmo dentro das cidades.
+                        <br><br>
+                        A horta é aberta à participação de qualquer pessoa, de acordo com os horários de
+                        funcionamento do CCSP e dos mutirões. Estamos unidos pelo amor à natureza e o
+                        ativismo pela alimentação saudável, a agroecologia e a justiça socioambiental.
+                    </p>
+                    <a href="https://www.facebook.com/UniaodeHortasSP/?locale=pt_BR" class="more-btn grn-btn">Saiba Mais</a>
+                </div>
+                <div class="parceiros-col">
+                    <h1>Escola Comunitária</h1><br><br>
+                    <p>A Escola Comunitária - Integração Escola e Comunidade é um trabalho
+                        independente de pesquisas e experimentações atuando desde 2016 no bairro da
+                        Aclimação em São Paulo, buscando transformações positivas com parcerias e
+                        colaborações.
+                        <br><br>Nossas ações transitam pelos pilares da arte, educação, território e
+                            sustentabilidade. Exercitamos a construção de uma cidadania mais participativa
+                            para o desenvolvimento local. “A verdadeira fraternidade é a fraternidade do
+                            trabalho. O mais sólido dos traços de união entre os membros de uma família, de
+                            um grupo, de uma aldeia e de uma pátria ainda é o trabalho.” Celestin Freinet.
+                        <br><br>O objetivo do projeto é promover o desenvolvimento local através de
+                            pesquisa-ações realizando diversas atividades como mutirões, oficinas, estudos
+                            do meio e debates, onde as escolas públicas na região da Aclimação e comunidade
+                            local se unem para compreender as necessidades do território e assim pensar
+                            caminhos possíveis de melhorias, dialogando de forma autônoma como também
+                            participando de processos nas políticas públicas.</p>
+                            <a href="https://www.facebook.com/escolacomunitariasp/" class="more-btn grn-btn">Saiba Mais</a>
+                </div>
+                <div class="parceiros-col">
+                    <img src="/image/escolacomunitaria.jpg" alt="imagem escola comunitária">
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- FOOTER
+        ----------------------------------------------------------->
+
+        <section class="footer">
+            <h4>Mais Informações</h4>
+            <p>Sinta-se à vontade para conferir nossas redes sociais abaixo!</p>
+            <div class="icones">
+                <a
+                    href="https://www.facebook.com/missaoambiental.org/"
+                    class="fa-brands fa-facebook fa-2xl"></a>
+                <a
+                    href="https://www.instagram.com/missao.ambiental/"
+                    class="fa-brands fa-instagram fa-2xl"></a>
+                <a
+                    href="https://www.youtube.com/watch?v=6DdECw7ligk"
+                    class="fa-brands fa-youtube fa-2xl"></a>
+                <a
+                    href="mailto: missaoambiental@hotmail.com"
+                    class="fa-solid fa-envelope fa-2xl"></a>
+                <a href="https://linktr.ee/missaoambiental" class="fa-solid fa-link fa-2xl"></a>
+                <br><br>
+            </div>
+            <div class="links-footer">
+                <h4>Outros Links</h4><br>
+                <ul>
+                    <a href="">Agricultura</a><br><br>
+                    <a href="">Horta Comunitária</a><br><br>
+                    <a href="">Compostagem</a><br><br>
+                    <a href="">Abelhas Sem Ferrão</a><br><br>
+                    <a href="">Captação Água da Chuva</a><br><br>
+                    <a href="">Reciclagem</a><br><br>
+                    <a href="">Espécies Nativas</a><br><br>
+                    <a href="/html/home.html">Home</a><br><br>
+                    <a href="/html/sobre.html">Sobre</a><br><br>
+                    <a href="">Galeria</a><br><br>
+                    <a href="/html/parceiros.html">Parceiros</a><br><br>
+                    <a href="/html/contato.html">Contato</a><br><br>
+                    <a href="/html/voluntarios.html">Voluntarie-se</a><br><br>
+                    <a href="">asdfasdfa</a><br><br>
+                    <a href="">asdfasdfasdfas</a><br><br>
+                </ul>
+            </div>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
