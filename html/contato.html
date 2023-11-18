@@ -1,30 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://kit.fontawesome.com/24c241d891.js" crossorigin="anonymous"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bree+Serif&family=Playfair+Display:wght@400;500;600&family=Staatliches&display=swap');
         </style>
-        <link rel="stylesheet" href="/css/missaoambiental.css">
-        <script src="/js/missaoambiental.js"></script>
-        <title>Contato</title>
     </head>
     <body>
-        <div>
-            <header class="header">
-                <a href="missaoambiental.html" class="logo">missão ambiental</a>
-                <nav class="navbar">
-                    <a href="missaoambiental.html">Home</a>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="galeria.html">Galeria</a>
-                    <a href="parceiros.html">Parceiros</a>
-                    <a href="contato.html">Contato</a>
-                    <a href="voluntario.html">Voluntarie-se</a>
-                </nav>
-            </header>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
+        <section class="sub-header">
+            <nav>
+                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental  ">Missão Ambiental</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="/html/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/html/sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="/html/parceiros.html">Parceiros</a>
+                        </li>
+                        <li>
+                            <a href="/html/contato.html">Contato</a>
+                        </li>
+                        <li>
+                            <a href="/html/voluntarios.html">Voluntarie-se</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+            </nav>
+            <h1>Nossos Contatos</h1>
+            <p>Veja onde estamos localizados e fale diretamente com a gente para saber mais e colaborar com o meio ambiente!</p>
+        </section>
+        <!----------------------------------------------------------- CONTATO ---------------------------------------------------------------->
+
+        <section class="local">
+            <h1>Sede Missão Ambiental - Ipiranga</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.52134304978534!2d-46.61374201592875!3d-23.59208288532529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b36975b7625%3A0x69aeac37903cc961!2sMISS%C3%83O%20AMBIENTAL%20-%20PORTARIA%2001!5e0!3m2!1spt-BR!2sbr!4v1700246367990!5m2!1spt-BR!2sbr"
+                width="800"
+                height="600"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </section>
+
+        <section class="contatenos">
+            <div class="row">
+                <div class="contatenos-col">
+                    <div>
+                        <i class="fa-solid fa-home"></i>
+                        <span>
+                            <h5>Rua Moreira de Godói 01, 04270-001, São Paulo</h5>
+                            <p>Ipiranga, SP, Brasil</p>    
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>(11) 96677-6565</h5>  
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>
+                            <h5>missaoambiental.org@gmail.com</h5>  
+                            <p>Envie um email para nós!</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>
+                            <h5 onclick="location.href='https://www.facebook.com/missaoambiental.org'" style="cursor: pointer;" >Missão Ambiental</h5>  
+                            <p>Acesse nossa página do Facebook</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contatenos-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name = "name" placeholder="Insira seu Nome" required>
+                        <input type="email" name = "email" placeholder="Insira seu email" required>
+                        <input type="text" name = "subject" placeholder="Assunto" required>
+                        <textarea rows="8" name = "message" placeholder="Mensagem" required></textarea>
+                        <button type="submit" class="more-btn grn-btn">Enviar email!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------------------- FOOTER ----------------------------------------------------------->
+
+        <section class="footer">
+            <h4>Mais Informações</h4>
+            <p>Sinta-se à vontade para conferir nossas redes sociais abaixo!</p>
+            <div class="icones">
+                <a
+                    href="https://www.facebook.com/missaoambiental.org/"
+                    class="fa-brands fa-facebook fa-2xl"></a>
+                <a
+                    href="https://www.instagram.com/missao.ambiental/"
+                    class="fa-brands fa-instagram fa-2xl"></a>
+                <a
+                    href="https://www.youtube.com/watch?v=6DdECw7ligk"
+                    class="fa-brands fa-youtube fa-2xl"></a>
+                <a
+                    href="mailto: missaoambiental.org@gmail.com"
+                    class="fa-solid fa-envelope fa-2xl"></a>
+                <a href="https://linktr.ee/missaoambiental" class="fa-solid fa-link fa-2xl"></a>
+                <br><br>
+            </div>
+            <div class="links-footer">
+                <h4>Outros Links</h4><br>
+                <ul>
+                    <a href="">Agricultura</a><br><br>
+                    <a href="">Horta Comunitária</a><br><br>
+                    <a href="">Compostagem</a><br><br>
+                    <a href="">Abelhas Sem Ferrão</a><br><br>
+                    <a href="">Captação Água da Chuva</a><br><br>
+                    <a href="">Reciclagem</a><br><br>
+                    <a href="">Espécies Nativas</a><br><br>
+                    <a href="/html/home.html">Home</a><br><br>
+                    <a href="/html/sobre.html">Sobre</a><br><br>
+                    <a href="">Galeria</a><br><br>
+                    <a href="/html/parceiros.html">Parceiros</a><br><br>
+                    <a href="/html/contato.html">Contato</a><br><br>
+                    <a href="/html/voluntarios.html">Voluntarie-se</a><br><br>
+                    <a href="">asdfasdfa</a><br><br>
+                    <a href="">asdfasdfasdfas</a><br><br>
+                </ul>
+            </div>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

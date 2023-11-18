@@ -1,41 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre Nós</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://kit.fontawesome.com/24c241d891.js" crossorigin="anonymous"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bree+Serif&family=Playfair+Display:wght@400;500;600&family=Staatliches&display=swap');
         </style>
-        <link rel="stylesheet" href="/css/missaoambiental.css">
-        <script src="/js/missaoambiental.js"></script>
-        <title>Sobre</title>
     </head>
-    <body id = "sobreback">
-        <div>
-            <header class="header">
-                <a href="missaoambiental.html" class="logo">missão ambiental</a>
-                <nav class="navbar">
-                    <a href="missaoambiental.html">Home</a>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="galeria.html">Galeria</a>
-                    <a href="parceiros.html">Parceiros</a>
-                    <a href="contato.html">Contato</a>
-                    <a href="voluntario.html">Voluntarie-se</a>
-                </nav>
-            </header>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2 id="quemsomos">Quem Somos</h2>
-        <p id="sobre">A Missão Ambiental é uma associação civil sem fins lucrativos que
-            cria espaços de preservação e convivência para a comunidade de vida na Terra
-            buscando garantir a otimização dos recursos ambientais com produção de alimentos
-            e regeneração do solo, incentiva a participação dos moradores do entorno e busca
-            parceiros locais para realizar suas atividades. Além disso, conta com um amplo
-            espaço cedido pela iniciativa privada onde são desenvolvidas atividades de
-            educação ambiental, horta comunitária, agroecologia, viveiro de mudas nativas
-            para as ações de plantios, mutirões, cursos e oficinas.
-        </body>
-    </html>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental  ">Missão Ambiental</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="/html/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/html/sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="/html/parceiros.html">Parceiros</a>
+                        </li>
+                        <li>
+                            <a href="/html/contato.html">Contato</a>
+                        </li>
+                        <li>
+                            <a href="/html/voluntarios.html">Voluntarie-se</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+            </nav>
+            <h1>Sobre Nós</h1>
+            <p>Conheça mais à respeito desta comunidade e projeto que visa a melhoria de
+                qualidade de vida e preservação do meio ambiente!</p>
+        </section>
+        <!----------------------------------------------------------- SOBRE NÓS
+        ---------------------------------------------------------------->
+        <section class="sobrenos">
+            <div class="row">
+                <div class="sobre-col">
+                    <h1>Missão Ambiental</h1><br>
+                    <p>A Missão Ambiental é uma associação civil sem fins lucrativos que cria
+                        espaços de preservação e convivência para a comunidade de vida na Terra buscando
+                        garantir a otimização dos recursos ambientais com produção de alimentos e
+                        regeneração do solo, incentiva a participação dos moradores do entorno e busca
+                        parceiros locais para realizar suas atividades.
+                        <br><br>Além disso, conta com um espaço cedido pela iniciativa privada, onde são
+                            desenvolvidas atividades de Educação Ambiental, Horta Comunitária, Guarda e
+                            Berçario de Mudas Nativas para as Ações de Plantios de ávores na região,
+                            Mutirões e Plantios, Cursos e Capacitação.
+                        <br><br>Tem um quadro de voluntários permanentes e parceiros fantásticos como:
+                            S.O.S Abelhas sem Ferrão, Escola Comunitária, União de Hortas Comunitárias de
+                            São Paulo, Edison Urbano, Aquário de São Paulo, ICC Instituto Cristovão Colombo,
+                            FUNSAI Fundação Nossa Senhora Auxiliadora, CADES IPIRANGA, Muda Ipiranga entre
+                            outros.</p>
+                </div>
+                <div class="sobre-col">
+                    <img src="/image/358397543_586122163699636_6381993502663242397_n.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- FOOTER
+        ----------------------------------------------------------->
+
+        <section class="footer">
+            <h4>Mais Informações</h4>
+            <p>Sinta-se à vontade para conferir nossas redes sociais abaixo!</p>
+            <div class="icones">
+                <a
+                    href="https://www.facebook.com/missaoambiental.org/"
+                    class="fa-brands fa-facebook fa-2xl"></a>
+                <a
+                    href="https://www.instagram.com/missao.ambiental/"
+                    class="fa-brands fa-instagram fa-2xl"></a>
+                <a
+                    href="https://www.youtube.com/watch?v=6DdECw7ligk"
+                    class="fa-brands fa-youtube fa-2xl"></a>
+                <a
+                    href="mailto: missaoambiental@hotmail.com"
+                    class="fa-solid fa-envelope fa-2xl"></a>
+                <a href="https://linktr.ee/missaoambiental" class="fa-solid fa-link fa-2xl"></a>
+                <br><br>
+            </div>
+            <div class="links-footer">
+                <h4>Outros Links</h4><br>
+                <ul>
+                <a href="">Agricultura</a><br><br>
+                <a href="">Horta Comunitária</a><br><br>
+                <a href="">Compostagem</a><br><br>
+                <a href="">Abelhas Sem Ferrão</a><br><br>
+                <a href="">Captação Água da Chuva</a><br><br>
+                <a href="">Reciclagem</a><br><br>
+                <a href="">Espécies Nativas</a><br><br>
+                <a href="/html/home.html">Home</a><br><br>
+                <a href="/html/sobre.html">Sobre</a><br><br>
+                <a href="">Galeria</a><br><br>
+                <a href="/html/parceiros.html">Parceiros</a><br><br>
+                <a href="/html/contato.html">Contato</a><br><br>
+                <a href="/html/voluntarios.html">Voluntarie-se</a><br><br>
+                <a href="">asdfasdfa</a><br><br>
+                <a href="">asdfasdfasdfas</a><br><br>        
+            </ul>
+            </div>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
