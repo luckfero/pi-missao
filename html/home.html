@@ -13,7 +13,9 @@
     <body>
         <section class="header">
             <nav>
-                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental  ">Missão Ambiental</a>
+                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental">
+                    <p>Missão Ambiental</p>
+                </a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
                     <ul>
@@ -24,13 +26,16 @@
                             <a href="/html/sobre.html">Sobre</a>
                         </li>
                         <li>
-                            <a href="#">Galeria</a>
+                            <a href="/html/galeria.html">Galeria</a>
                         </li>
                         <li>
                             <a href="/html/parceiros.html">Parceiros</a>
                         </li>
                         <li>
                             <a href="/html/contato.html">Contato</a>
+                        </li>
+                        <li>
+                            <a href="/html/agenda.html">Agenda</a>
                         </li>
                         <li>
                             <a href="/html/voluntarios.html">Voluntarie-se</a>
@@ -52,32 +57,26 @@
             </div>
         </section>
 
-        <!-------------------------------------------------- CARDS ---------------------------------------------->
+        <!-------------------------------------------------- CARDS
+        ---------------------------------------------->
 
         <section class="allthings">
             <h1>Nossas Atividades</h1>
             <p>Confira as atividades, projetos e cursos que a Missão Ambiental realiza!</p>
             <div class="row">
-                <a href="/image/agricultura.jpeg" class="allthings-col">
-                    <h3>Agricultura
-                        <i class="fa-solid fa-carrot"></i>
-                    </h3>
-                    <p>A agricultura é a atividade humana de cultivo de plantas para produção de
-                        alimentos, fibras, combustíveis e outros recursos envolvendo práticas como
-                        plantio, colheita e gestão de recursos naturais.
-                        <br><br>Clique para saber mais!</p>
-                </a>
-                <a href="" class="allthings-col">
+                <a href="/html/parceiros.html#hortaanchor" class="allthings-col">
                     <h3>Horta Comunitária
+                        <br>
                         <i class="fa-solid fa-leaf"></i>
                     </h3>
                     <p>Uma horta comunitária é um espaço compartilhado onde membros da comunidade
                         cultivam alimentos, ervas e plantas juntos, promovendo a segurança alimentar, a
                         sustentabilidade e a cooperação local.
-                        <br><br>Clique para saber mais!</p>
+                        <br><br><br>Clique para saber mais!</p>
                 </a>
-                <a href="" class="allthings-col">
+                <a href="/html/voluntarios.html#volanchor" class="allthings-col">
                     <h3>Compostagem
+                        <br>
                         <i class="fa-solid fa-hand-holding-heart"></i>
                     </h3>
                     <p>A compostagem é um processo de decomposição natural de materiais orgânicos
@@ -85,46 +84,19 @@
                         para melhorar o solo.
                         <br><br><br>Clique para saber mais!</p>
                 </a>
-                <a href="" class="allthings-col">
+                <a href="/html/parceiros.html#bee" class="allthings-col">
                     <h3>Abelhas Sem Ferrão
+                        <br>
                         <i class="fa-solid fa-bug"></i>
                     </h3>
                     <p>Abelhas sem ferrão são uma variedade de abelhas que, ao contrário das abelhas
                         melíferas, não possuem ferrão.
-                        <br><br>Elas são importantes polinizadoras e produzem mel, cera e outros
-                            produtos, sendo criadas em colônias por apicultores em algumas regiões
-                            tropicais.</p>
+                        <br><br>Elas são importantes polinizadoras e produzem mel, cera e outros produtos.
+                        <br><br>Clique para saber mais!</p>
                 </a>
-                <a href="" class="allthings-col">
-                    <h3>Captação Água da Chuva
-                        <i class="fa-solid fa-cloud-rain"></i>
-                    </h3>
-                    <p>A captação de água da chuva é o processo de coleta, armazenamento e uso para
-                        fins como irrigação e limpeza.
-                        <br><br>Essa prática sustentável ajuda a conservar recursos hídricos e reduzir a
-                            dependência de fontes convencionais de água.</p>
-                </a>
-                <a href="" class="allthings-col">
-                    <h3>Reciclagem
-                        <i class="fa-solid fa-recycle"></i>
-                    </h3>
-                    <p>A reciclagem é um processo de coleta, processamento e transformação de
-                        materiais descartados em novos produtos.
-                        <br>
-                        <br>Ela contribui para a sustentabilidade ao economizar recursos e reduzir a
-                            poluição.</p>
-                </a>
-                <a href="" class="allthings-col">
-                    <h3>Espécies Nativas
-                        <i class="fa-solid fa-tree"></i>
-                    </h3>
-                    <p>Espécies nativas são organismos que se desenvolvem naturalmente em uma
-                        determinada região.
-                        <br><br>Elas desempenham papéis essenciais nos ecossistemas locais e são
-                            adaptadas às condições ambientais específicas de sua área de origem.</p>
-                </a>
-                <a href="" class="allthings-col">
+                <a href="/html/agenda.html#calendariooficinas" class="allthings-col">
                     <h3>Oficinas Educação Ambiental
+                        <br>
                         <i class="fa-solid fa-graduation-cap"></i>
                     </h3>
                     <p>Atividade prática e interativa que visa aumentar a conscientização e o
@@ -132,12 +104,53 @@
                         comunidade para promover a sustentabilidade e a preservação do meio ambiente.
                         <br><br>Clique para saber mais!</p>
                 </a>
+                <a id="nonclick" href="#" class="allthings-col">
+                    <h3>Captação Água da Chuva
+                        <br>
+                        <i class="fa-solid fa-cloud-rain"></i>
+                    </h3>
+                    <p>A captação de água da chuva é o processo de coleta, armazenamento e uso para
+                        fins como irrigação e limpeza.
+                        <br><br>Essa prática sustentável ajuda a conservar recursos hídricos e reduzir a
+                            dependência de fontes convencionais de água.</p>
+                </a>
+                <a id="nonclick" href="#" class="allthings-col">
+                    <h3>Reciclagem
+                        <br>
+                        <i class="fa-solid fa-recycle"></i>
+                    </h3>
+                    <p>A reciclagem é um processo de coleta, processamento e transformação de
+                        materiais descartados em novos produtos. Seu objetivo é reintroduzi-los na
+                        cadeia produtiva a fim de que ainda gerem valor e sejam reutilizados.
+                    </p>
+                </a>
+                <a id="nonclick" href="#" class="allthings-col">
+                    <h3>Espécies Nativas
+                        <br>
+                        <i class="fa-solid fa-tree"></i>
+                    </h3>
+                    <p>Espécies nativas são organismos que se desenvolvem naturalmente em uma
+                        determinada região.
+                        <br><br>Elas desempenham papéis essenciais nos ecossistemas locais e são
+                            adaptadas às condições ambientais específicas de sua área de origem.</p>
+                </a>
+                <a id="nonclick" href="#" class="allthings-col">
+                    <h3>Agricultura Urbana
+                        <br>
+                        <i class="fa-solid fa-carrot"></i>
+                    </h3>
+                    <p>A agricultura é a atividade humana de cultivo de plantas para produção de
+                        alimentos, fibras, combustíveis e outros recursos envolvendo práticas como
+                        plantio, colheita e gestão de recursos naturais.
+                        <br><br></p>
+                </a>
 
             </div>
 
         </section>
 
-        <!-------------------------------------------------------- UNIDADES ---------------------------------------------------->
+        <!-------------------------------------------------------- UNIDADES
+        ---------------------------------------------------->
         <div class="fundo">
             <section class="unidades">
                 <h1>Nossas Unidades</h1>
@@ -146,17 +159,21 @@
 
                 <div class="row">
                     <div class="unidades-col">
-                        <img src="/image/sede.png" alt="Unidade Ipiranga - Sede">
-                        <div class="camada">
-                            <h3>Sede Ipiranga</h3>
-                        </div>
+                        <a href="/html/contato.html#ipirangasedemapa">
+                            <img src="/image/sede.png" alt="Unidade Ipiranga - Sede">
+                            <div class="camada">
+                                <h3>Sede Ipiranga</h3>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="unidades-col">
-                        <img src="/image/helipa.png" alt="Unidade Helipa">
-                        <div class="camada">
-                            <h3>Unidade Heliópolis</h3>
-                        </div>
+                        <a href="https://maps.app.goo.gl/dmr2r3vAwcyT9tqr9" target="_blank">
+                            <img src="/image/helipa.png" alt="Unidade Helipa">
+                            <div class="camada">
+                                <h3>Unidade Heliópolis</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -166,10 +183,11 @@
             <h1>Para saber mais, fazer uma doação ou candidatar-se como voluntário
                 <br>
                 Contate-nos!</h1>
-                <a href="mailto: missaoambiental.org@gmail.com" class="more-btn">Contate-nos</a>
+            <a href="/html/contato.html" class="more-btn">Contate-nos</a>
         </section>
 
-        <!--------------------------------------------------------- FOOTER ----------------------------------------------------------->
+        <!--------------------------------------------------------- FOOTER
+        ----------------------------------------------------------->
 
         <section class="footer">
             <h4>Mais Informações</h4>
@@ -177,37 +195,43 @@
             <div class="icones">
                 <a
                     href="https://www.facebook.com/missaoambiental.org/"
+                    target="_blank"
                     class="fa-brands fa-facebook fa-2xl"></a>
                 <a
                     href="https://www.instagram.com/missao.ambiental/"
+                    target="_blank"
                     class="fa-brands fa-instagram fa-2xl"></a>
                 <a
                     href="https://www.youtube.com/watch?v=6DdECw7ligk"
+                    target="_blank"
                     class="fa-brands fa-youtube fa-2xl"></a>
                 <a
                     href="mailto: missaoambiental@hotmail.com"
                     class="fa-solid fa-envelope fa-2xl"></a>
-                <a href="https://linktr.ee/missaoambiental" class="fa-solid fa-link fa-2xl"></a>
+                <a
+                    href="https://linktr.ee/missaoambiental"
+                    target="_blank"
+                    class="fa-solid fa-link fa-2xl"></a>
                 <br><br>
             </div>
             <div class="links-footer">
                 <h4>Outros Links</h4><br>
                 <ul>
-                <a href="">Agricultura</a><br><br>
-                <a href="">Horta Comunitária</a><br><br>
-                <a href="">Compostagem</a><br><br>
-                <a href="">Abelhas Sem Ferrão</a><br><br>
-                <a href="">Captação Água da Chuva</a><br><br>
-                <a href="">Reciclagem</a><br><br>
-                <a href="">Espécies Nativas</a><br><br>
-                <a href="/html/home.html">Home</a><br><br>
-                <a href="/html/sobre.html">Sobre</a><br><br>
-                <a href="">Galeria</a><br><br>
-                <a href="/html/parceiros.html">Parceiros</a><br><br>
-                <a href="/html/contato.html">Contato</a><br><br>
-                <a href="/html/voluntarios.html">Voluntarie-se</a><br><br>
-                <a href="">asdfasdfa</a><br><br>
-                <a href="">asdfasdfasdfas</a><br><br>
+                    <!-- <a href="">Agricultura</a><br><br> -->
+                    <a href="/html/parceiros.html#hortaanchor">Horta Comunitária</a><br><br>
+                    <a href="/html/voluntarios.html#volanchor">Compostagem</a><br><br>
+                    <a href="/html/parceiros.html#bee">Abelhas Sem Ferrão</a><br><br>
+                    <!-- <a href="">Captação Água da Chuva</a><br><br> 
+                    <a href="">Reciclagem</a><br><br> 
+                    <a href="">Espécies Nativas</a><br><br> -->
+                    <a href="/html/home.html">Home</a><br><br>
+                    <a href="/html/sobre.html">Sobre</a><br><br>
+                    <a href="/html/galeria.html">Galeria</a><br><br>
+                    <a href="/html/parceiros.html">Parceiros</a><br><br>
+                    <a href="/html/contato.html">Contato</a><br><br>
+                    <a href="/html/voluntarios.html">Voluntarie-se</a><br><br>
+                    <a href="/html/agenda.html">Agenda</a><br><br>
+                    <!-- <a href="">asdfasdfasdfas</a><br><br> -->
                 </ul>
             </div>
         </section>

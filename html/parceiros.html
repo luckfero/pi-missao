@@ -13,7 +13,9 @@
     <body>
         <section class="sub-header">
             <nav>
-                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental  ">Missão Ambiental</a>
+                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental">
+                    <p>Missão Ambiental</p>
+                </a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
                     <ul>
@@ -24,13 +26,16 @@
                             <a href="/html/sobre.html">Sobre</a>
                         </li>
                         <li>
-                            <a href="#">Galeria</a>
+                            <a href="/html/galeria.html">Galeria</a>
                         </li>
                         <li>
                             <a href="/html/parceiros.html">Parceiros</a>
                         </li>
                         <li>
                             <a href="/html/contato.html">Contato</a>
+                        </li>
+                        <li>
+                            <a href="/html/agenda.html">Agenda</a>
                         </li>
                         <li>
                             <a href="/html/voluntarios.html">Voluntarie-se</a>
@@ -42,12 +47,12 @@
             <h1>Parceiros</h1>
             <p>Conheça mais à respeito das entidades e grupos que apoiam a Missão Ambiental!</p>
         </section>
-        <!----------------------------------------------------------- SOBRE NÓS
+        <!----------------------------------------------------------- PARCEIROS
         ---------------------------------------------------------------->
         <section class="parceiros">
             <div class="row">
                 <div class="parceiros-col">
-                    <h1>S.O.S Abelhas Sem Ferrão</h1><br><br>
+                    <h1 id="bee">S.O.S Abelhas Sem Ferrão</h1><br><br>
                     <p>O SOS Abelhas Sem Ferrão é uma organização sem fins lucrativos, nascida de um
                         grupo de amigos, preocupados com o desaparecimento das abelhas nativas, que se
                         juntaram para tomar uma iniciativa a fim de reverter este quadro.
@@ -62,7 +67,10 @@
                         <br><br>Assim o SOS Abelhas sem Ferrão, atuando principalmente através de
                             educação ambiental, ações de conscientização e resgate de enxames em risco,
                             trabalha para a preservação das abelhas!</p>
-                            <a href="https://sosabelhassemferrao.com.br/site/" class="more-btn grn-btn">Saiba Mais</a>
+                    <a
+                        href="https://sosabelhassemferrao.com.br/site/"
+                        target="_blank"
+                        class="more-btn grn-btn">Saiba Mais</a>
                 </div>
                 <div class="parceiros-col">
                     <img src="/image/sos.jpg" alt="imagem sos abelhas sem ferrão">
@@ -71,7 +79,7 @@
                     <img src="/image/uniaohorta.png" alt="imagem união horta">
                 </div>
                 <div class="parceiros-col">
-                    <h1>União de Hortas Comunitárias de São Paulo</h1><br><br>
+                    <h1 id="hortaanchor">União de Hortas Comunitárias de São Paulo</h1><br><br>
                     <p>A União de Hortas Comunitárias de São Paulo busca promover a troca de
                         experiências e o fortalecimento da agricultura urbana comunitária da cidade,
                         representando mais de 10 hortas espalhadas pela cidade de São Paulo, como por
@@ -86,7 +94,10 @@
                         funcionamento do CCSP e dos mutirões. Estamos unidos pelo amor à natureza e o
                         ativismo pela alimentação saudável, a agroecologia e a justiça socioambiental.
                     </p>
-                    <a href="https://www.facebook.com/UniaodeHortasSP/?locale=pt_BR" class="more-btn grn-btn">Saiba Mais</a>
+                    <a
+                        href="https://www.facebook.com/UniaodeHortasSP/?locale=pt_BR"
+                        target="_blank"
+                        class="more-btn grn-btn">Saiba Mais</a>
                 </div>
                 <div class="parceiros-col">
                     <h1>Escola Comunitária</h1><br><br>
@@ -105,7 +116,10 @@
                             local se unem para compreender as necessidades do território e assim pensar
                             caminhos possíveis de melhorias, dialogando de forma autônoma como também
                             participando de processos nas políticas públicas.</p>
-                            <a href="https://www.facebook.com/escolacomunitariasp/" class="more-btn grn-btn">Saiba Mais</a>
+                    <a
+                        href="https://www.facebook.com/escolacomunitariasp/"
+                        target="_blank"
+                        class="more-btn grn-btn">Saiba Mais</a>
                 </div>
                 <div class="parceiros-col">
                     <img src="/image/escolacomunitaria.jpg" alt="imagem escola comunitária">
@@ -122,37 +136,43 @@
             <div class="icones">
                 <a
                     href="https://www.facebook.com/missaoambiental.org/"
+                    target="_blank"
                     class="fa-brands fa-facebook fa-2xl"></a>
                 <a
                     href="https://www.instagram.com/missao.ambiental/"
+                    target="_blank"
                     class="fa-brands fa-instagram fa-2xl"></a>
                 <a
                     href="https://www.youtube.com/watch?v=6DdECw7ligk"
+                    target="_blank"
                     class="fa-brands fa-youtube fa-2xl"></a>
                 <a
                     href="mailto: missaoambiental@hotmail.com"
                     class="fa-solid fa-envelope fa-2xl"></a>
-                <a href="https://linktr.ee/missaoambiental" class="fa-solid fa-link fa-2xl"></a>
+                <a
+                    href="https://linktr.ee/missaoambiental"
+                    target="_blank"
+                    class="fa-solid fa-link fa-2xl"></a>
                 <br><br>
             </div>
             <div class="links-footer">
                 <h4>Outros Links</h4><br>
                 <ul>
-                    <a href="">Agricultura</a><br><br>
-                    <a href="">Horta Comunitária</a><br><br>
-                    <a href="">Compostagem</a><br><br>
-                    <a href="">Abelhas Sem Ferrão</a><br><br>
-                    <a href="">Captação Água da Chuva</a><br><br>
+                    <!-- <a href="">Agricultura</a><br><br> -->
+                    <a href="/html/parceiros.html#hortaanchor">Horta Comunitária</a><br><br>
+                    <a href="/html/voluntarios.html#volanchor">Compostagem</a><br><br>
+                    <a href="/html/parceiros.html#bee">Abelhas Sem Ferrão</a><br><br>
+                    <!-- <a href="">Captação Água da Chuva</a><br><br>
                     <a href="">Reciclagem</a><br><br>
-                    <a href="">Espécies Nativas</a><br><br>
+                    <a href="">Espécies Nativas</a><br><br> -->
                     <a href="/html/home.html">Home</a><br><br>
                     <a href="/html/sobre.html">Sobre</a><br><br>
-                    <a href="">Galeria</a><br><br>
+                    <a href="/html/galeria.html">Galeria</a><br><br>
                     <a href="/html/parceiros.html">Parceiros</a><br><br>
                     <a href="/html/contato.html">Contato</a><br><br>
                     <a href="/html/voluntarios.html">Voluntarie-se</a><br><br>
-                    <a href="">asdfasdfa</a><br><br>
-                    <a href="">asdfasdfasdfas</a><br><br>
+                    <a href="/html/agenda.html">Agenda</a><br><br>
+                    <!-- <a href="">asdfasdfasdfas</a><br><br> -->
                 </ul>
             </div>
         </section>
