@@ -13,7 +13,9 @@
     <body>
         <section class="sub-header">
             <nav>
-                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental  ">Missão Ambiental</a>
+                <a href="/html/home.html"><img src="/image/logocolorido.png" alt="Missao Ambiental">
+                    <p>Missão Ambiental</p>
+                </a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
                     <ul>
@@ -24,13 +26,16 @@
                             <a href="/html/sobre.html">Sobre</a>
                         </li>
                         <li>
-                            <a href="#">Galeria</a>
+                            <a href="/html/galeria.html">Galeria</a>
                         </li>
                         <li>
                             <a href="/html/parceiros.html">Parceiros</a>
                         </li>
                         <li>
                             <a href="/html/contato.html">Contato</a>
+                        </li>
+                        <li>
+                            <a href="/html/agenda.html">Agenda</a>
                         </li>
                         <li>
                             <a href="/html/voluntarios.html">Voluntarie-se</a>
@@ -40,12 +45,14 @@
                 <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
             </nav>
             <h1>Nossos Contatos</h1>
-            <p>Veja onde estamos localizados e fale diretamente com a gente para saber mais e colaborar com o meio ambiente!</p>
+            <p>Veja onde estamos localizados e fale diretamente com a gente para saber mais
+                e colaborar com o meio ambiente!</p>
         </section>
-        <!----------------------------------------------------------- CONTATO ---------------------------------------------------------------->
+        <!----------------------------------------------------------- CONTATO
+        ---------------------------------------------------------------->
 
         <section class="local">
-            <h1>Sede Missão Ambiental - Ipiranga</h1>
+            <h1 id="ipirangasedemapa">Sede Missão Ambiental - Ipiranga</h1>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.52134304978534!2d-46.61374201592875!3d-23.59208288532529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b36975b7625%3A0x69aeac37903cc961!2sMISS%C3%83O%20AMBIENTAL%20-%20PORTARIA%2001!5e0!3m2!1spt-BR!2sbr!4v1700246367990!5m2!1spt-BR!2sbr"
                 width="800"
@@ -53,7 +60,7 @@
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section class="contatenos">
@@ -62,43 +69,54 @@
                     <div>
                         <i class="fa-solid fa-home"></i>
                         <span>
-                            <h5>Rua Moreira de Godói 01, 04270-001, São Paulo</h5>
-                            <p>Ipiranga, SP, Brasil</p>    
+                            <h5>Rua Moreira de Godói, 01 - Vila São José, São Paulo</h5>
+                            <p>Ipiranga, SP, Brasil</p>
                         </span>
                     </div>
                     <div>
                         <i class="fa-solid fa-phone"></i>
                         <span>
-                            <h5>(11) 96677-6565</h5>  
+                            <h5>(11) 96677-6565</h5>
                         </span>
                     </div>
                     <div>
                         <i class="fa-regular fa-envelope"></i>
                         <span>
-                            <h5>missaoambiental.org@gmail.com</h5>  
+                            <h5>missaoambiental.org@gmail.com</h5>
                             <p>Envie um email para nós!</p>
                         </span>
                     </div>
                     <div>
                         <i class="fa-brands fa-facebook"></i>
                         <span>
-                            <h5 onclick="location.href='https://www.facebook.com/missaoambiental.org'" style="cursor: pointer;" >Missão Ambiental</h5>  
+                            <h5
+                                onclick="location.href='https://www.facebook.com/missaoambiental.org'"
+                                style="cursor: pointer;">Missão Ambiental</h5>
                             <p>Acesse nossa página do Facebook</p>
                         </span>
                     </div>
                 </div>
                 <div class="contatenos-col">
                     <form action="form-handler.php" method="post">
-                        <input type="text" name = "name" placeholder="Insira seu Nome" required>
-                        <input type="email" name = "email" placeholder="Insira seu email" required>
-                        <input type="text" name = "subject" placeholder="Assunto" required>
-                        <textarea rows="8" name = "message" placeholder="Mensagem" required></textarea>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Insira seu Nome"
+                            required="required">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Insira seu email"
+                            required="required">
+                        <input type="text" name="subject" placeholder="Assunto" required="required">
+                        <textarea rows="8" name="message" placeholder="Mensagem" required="required"></textarea>
                         <button type="submit" class="more-btn grn-btn">Enviar email!</button>
                     </form>
                 </div>
             </div>
         </section>
-        <!--------------------------------------------------------- FOOTER ----------------------------------------------------------->
+        <!--------------------------------------------------------- FOOTER
+        ----------------------------------------------------------->
 
         <section class="footer">
             <h4>Mais Informações</h4>
@@ -106,37 +124,43 @@
             <div class="icones">
                 <a
                     href="https://www.facebook.com/missaoambiental.org/"
+                    target="_blank"
                     class="fa-brands fa-facebook fa-2xl"></a>
                 <a
                     href="https://www.instagram.com/missao.ambiental/"
+                    target="_blank"
                     class="fa-brands fa-instagram fa-2xl"></a>
                 <a
                     href="https://www.youtube.com/watch?v=6DdECw7ligk"
+                    target="_blank"
                     class="fa-brands fa-youtube fa-2xl"></a>
                 <a
-                    href="mailto: missaoambiental.org@gmail.com"
+                    href="mailto: missaoambiental@hotmail.com"
                     class="fa-solid fa-envelope fa-2xl"></a>
-                <a href="https://linktr.ee/missaoambiental" class="fa-solid fa-link fa-2xl"></a>
+                <a
+                    href="https://linktr.ee/missaoambiental"
+                    target="_blank"
+                    class="fa-solid fa-link fa-2xl"></a>
                 <br><br>
             </div>
             <div class="links-footer">
                 <h4>Outros Links</h4><br>
                 <ul>
-                    <a href="">Agricultura</a><br><br>
-                    <a href="">Horta Comunitária</a><br><br>
-                    <a href="">Compostagem</a><br><br>
-                    <a href="">Abelhas Sem Ferrão</a><br><br>
-                    <a href="">Captação Água da Chuva</a><br><br>
+                    <!-- <a href="">Agricultura</a><br><br> -->
+                    <a href="/html/parceiros.html#hortaanchor">Horta Comunitária</a><br><br>
+                    <a href="/html/voluntarios.html#volanchor">Compostagem</a><br><br>
+                    <a href="/html/parceiros.html#bee">Abelhas Sem Ferrão</a><br><br>
+                    <!-- <a href="">Captação Água da Chuva</a><br><br>
                     <a href="">Reciclagem</a><br><br>
-                    <a href="">Espécies Nativas</a><br><br>
+                    <a href="">Espécies Nativas</a><br><br> -->
                     <a href="/html/home.html">Home</a><br><br>
                     <a href="/html/sobre.html">Sobre</a><br><br>
-                    <a href="">Galeria</a><br><br>
+                    <a href="/html/galeria.html">Galeria</a><br><br>
                     <a href="/html/parceiros.html">Parceiros</a><br><br>
                     <a href="/html/contato.html">Contato</a><br><br>
                     <a href="/html/voluntarios.html">Voluntarie-se</a><br><br>
-                    <a href="">asdfasdfa</a><br><br>
-                    <a href="">asdfasdfasdfas</a><br><br>
+                    <a href="/html/agenda.html">Agenda</a><br><br>
+                    <!-- <a href="">asdfasdfasdfas</a><br><br> -->
                 </ul>
             </div>
         </section>

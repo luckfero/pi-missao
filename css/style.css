@@ -48,9 +48,14 @@ nav a{
     align-items: center;
 }
 
+nav p{
+    color: #fff;
+    font-size: 24px;
+}
+
 nav img {
     width: 90px;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 
 .nav-links {
@@ -102,8 +107,6 @@ nav img {
     margin: 40px 0 40px;
     font-size: 24px;
     color: #fff;
-    padding-left: 60px;
-    padding-right: 60px;
     line-height: 36px;
 }
 
@@ -161,17 +164,28 @@ nav .fa-solid{
 
     .nav-links ul{
         padding: 10px;
+    }    
+    .galeria {
+        column-count: 1;
     }
 }
+
+
 @media(max-width: 930px) {
     .text-box h1{
         padding-top: 150px;
         font-size: 56px;
     }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
     
 }
 
-@media(max-width: 500px) {
+
+@media(max-width: 520px) {
     .text-box h1{
         padding-top: 150px;
         font-size: 26px;
@@ -204,6 +218,14 @@ nav .fa-solid{
     .nav-links ul{
         padding: 10px;
     }
+    nav img {
+        width: 50px;
+        font-size: 10px;
+    }
+    nav p{
+        color: #fff;
+        font-size: 20px;
+    }
 }
 
 /*------------------------------------------------------------------------------------ PROJETOS -----------------------------------------------------------------------------------*/
@@ -213,6 +235,10 @@ nav .fa-solid{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+
+#nonclick {
+    cursor: default;
 }
 
 #galeria-col {
@@ -252,7 +278,6 @@ p {
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    cursor: pointer;
     text-decoration: none;
     color: black;
 }
@@ -634,20 +659,39 @@ p {
     color: #fff;
 }
 
+/* -------------------------------------------------------------------------------- GALERIA ---------------------------------------------------------------------------------- */
+
+.galeria {
+    column-count: 4;
+    column-gap: 10px;
+    padding: 20px;
+}
+
+.galeria img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+ .instawidget {
+    display: flex;
+    justify-content: center;  
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
 
 
+/* ------------------------------------------------------------------------------------- CALENDARIO -------------------------------------------------------------------------------- */
 
+.calendar {
+    width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.elfsight-app-ac43854f-09c8-43c6-8c5b-0c69cb2c9f72 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
 
